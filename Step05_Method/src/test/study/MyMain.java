@@ -27,10 +27,15 @@ public class MyMain {
 		myObj.setNum(num1);
 		
 		Car myCar=myObj.getCar();
-		String myName="고현석";
 		
+		String myName="고현석";
 		myObj.setName(myName);
+		myObj.setName("원숭이");
+		
 		myObj.useCar(myCar);
+		myObj.useCar(new Car());
+		
+		
 		myObj.useSome(myName, myCar);
 		
 		Radio r1=new Radio();
