@@ -12,6 +12,7 @@ public class MainClass01 {
 		FruitBox<Orange> box2=new FruitBox<Orange>();
 		FruitBox<Banana> box3=new FruitBox<Banana>();
 		
+		
 		//Generic  클래스로 지정한 type 객체를 넣어주어야 한다.
 		box1.push(new Apple());
 		box2.push(new Orange());
