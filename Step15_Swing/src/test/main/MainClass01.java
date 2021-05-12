@@ -8,7 +8,7 @@ public class MainClass01 {
 		//JFrame 객체 생성하고 
 		JFrame f=new JFrame("Hello Frame");
 		//초기 위치와 크기 지정 
-		f.setBounds(100, 100, 500, 500);
+		f.setBounds(100, 100, 500, 500); // f.setBounds(x좌표, y좌표, width, height);
 		//프레임을 닫았을때 자동으로 프로세스 종료 되도록 
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//레이아웃 메니저를 사용 하지 않도록 설정 

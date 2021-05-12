@@ -16,13 +16,21 @@ public class MainClass14 {
 			//파일에서 문자열을 읽어들일 객체
 			FileReader fr=new FileReader(memoFile);
 			BufferedReader br=new BufferedReader(fr);
+			
+			// 이클립스야 아래의 2줄의 코드를 더이상 읽을 문자열이 없을때까지 반복해줘~
+			/*
+			 *	String line=br.readLine();
+			 *	System.out.println(line); 
+			 */
+			
+			// 반복문 돌면서
 			while(true) {
-				//반복문 돌면서 문자열을 줄단위로(개행기호 기준) 읽어낸다.
+				// 개행 기호를 기준으로 한줄씩 읽어온다
 				String line=br.readLine();
-				if(line==null) {//더이상 읽을 문자열이 없으면
+				if(line==null) {// 만일 더이상 읽을 문자열이 없으면
 					break;//반복문 탈출
 				}
-				//읽은 문자열 출력하기 
+				// 읽은 문자열을 한줄씩 출력하기 
 				System.out.println(line);
 			}
 		}catch(IOException ie) {

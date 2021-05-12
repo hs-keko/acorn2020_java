@@ -1,5 +1,7 @@
 package test.frame1;
 
+import java.awt.FlowLayout;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -10,8 +12,9 @@ public class MyFrame extends JFrame{
 		super(title);
 		setBounds(100, 100, 500, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		//프레임의 레이아웃 메니저를 사용하지 않기 때문에 UI 를 절대 좌표에 직접 배치해야 한다.
-		setLayout(null);
+		// 레이 아웃 매니저를 FlowLayout 으로 지정한다
+		// setLayout(new FlowLayout(0));
+		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		JButton btn1=new JButton("버튼1");
 		//버튼의 위치
