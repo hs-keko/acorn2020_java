@@ -16,7 +16,7 @@ public class MainClass10 {
 		dto.setAddr("상도동");
 		//MemberDao 객체의 메소드를 활용해서 저장할수 있다. 
 		dao.insert(dto);
-		
+		// MemberDao a=new MemberDao()   -> X
 		MemberDao dao2=MemberDao.getInstance();
 		//수정할 회원의 정보라면
 		MemberDto dto2=new MemberDto(1, "김구라", "독산동");

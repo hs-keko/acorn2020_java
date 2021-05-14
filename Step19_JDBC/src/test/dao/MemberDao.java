@@ -25,7 +25,9 @@ public class MemberDao {
 	private static MemberDao dao;
 	
 	//외부에서 객체 생성하지 못하도록 한다. 
-	private MemberDao() {}
+	private MemberDao() {
+		System.out.println("MemberDao 객체가 생성되었습니다.");
+	}
 	
 	//참조값을 리턴해주는 메소드
 	public static MemberDao getInstance() {
@@ -214,6 +216,56 @@ public class MemberDao {
 
 
 
+/*
+Connection conn=null;
+PreparedStatement pstmt=null;
+int flag=0;
+try {
+   conn=new DBConnect().getConn();
+   //실행할 sql(INSERT OR UPDATE OR DELETE) 문 작성
+   String sql=" ";
+   pstmt=conn.prepareStatement(sql);
+   // ? 에 바인딩할 내용이 있으면 여기서 한다.
+   
+   flag=pstmt.executeUpdate();
+}catch(Exception e) {
+   e.printStackTrace();
+}finally {
+   try {
+      if(pstmt!=null)pstmt.close();
+      if(conn!=null)conn.close();
+   }catch(Exception e) {}
+}
+if(flag>0) {
+   return true;
+}else {
+   return false;
+}
+*/
 
-
-
+/*
+         Connection conn=null;
+      PreparedStatement pstmt=null;
+      ResultSet rs=null;
+      try {
+         conn=new DBConnect().getConn();
+         //실행할 SELECT 문
+         String sql="";
+         pstmt=conn.prepareStatement(sql);
+         //? 에 바인딩할 내용은 여기서 바인딩한다.
+         
+         rs=pstmt.executeQuery();
+         while(rs.next()) {
+            //SELECT 된 결과를 여기서 추출해서 객체에 담는다. 
+            
+         }
+      }catch(Exception e) {
+         e.printStackTrace();
+      }finally {
+         try {
+            if(rs!=null)rs.close();
+            if(pstmt!=null)pstmt.close();
+            if(conn!=null)conn.close();
+         }catch(Exception e) {}
+      }
+*/
