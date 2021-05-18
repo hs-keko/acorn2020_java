@@ -183,7 +183,7 @@ public class BirthDao {
       try {
          conn = new DBConnect().getConn();
          //실행할 SELECT 문
-         String sql = "SELECT num,name,birthday"
+         String sql = "SELECT num,name,TO_CHAR(birthday, 'YYYY\"년 \"MM\"월 \"DD\"일\"') AS birthday"
                + " FROM birth"
                + " ORDER BY num ASC";
          pstmt = conn.prepareStatement(sql);
