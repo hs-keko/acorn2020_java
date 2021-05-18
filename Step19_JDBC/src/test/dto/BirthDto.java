@@ -4,16 +4,16 @@ public class BirthDto {
 	// 필드 정의
 	private int num;
 	private String name;
-	private String birthday;
+	private String birth;
 	
 	// 디폴트 생성자
 	public BirthDto() {}
 
-	public BirthDto(int num, String name, String birthday) {
+	public BirthDto(int num, String name, String birth) {
 		super();
 		this.num = num;
 		this.name = name;
-		this.birthday = birthday;
+		this.birth = birth;
 	}
 
 	public int getNum() {
@@ -32,12 +32,12 @@ public class BirthDto {
 		this.name = name;
 	}
 
-	public String getBirthday() {
-		return birthday;
+	public String getBirth() {
+		return birth;
 	}
 
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
+	public void setBirth(String birth) {
+		this.birth = birth;
 	}
 	
 	
