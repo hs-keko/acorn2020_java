@@ -18,6 +18,14 @@ public class MainClass07 {
 			int rottoNum=ran.nextInt(45)+1;
 			//순서대로 저장하기 
 			nums[i]=rottoNum;
+			
+			//랜덤 값 반환, 중복 값 제거
+			for(int j=0; j<i; j++) {
+				if(nums[i]==nums[j]) {
+					i--;
+					break;
+				}
+			}
 		}
 		
 		for(int i=0;i<nums.length; i++) {
