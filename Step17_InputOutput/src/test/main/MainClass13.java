@@ -30,7 +30,7 @@ public class MainClass13 {
 			while(true) {
 				// read() 메소드를 이용해서 읽은 문자의 코드값을 얻어낸다. 
 				int code=fr.read();
-				if(code==-1) {// 만약 다 일ㄲ었다면 
+				if(code==-1) {// 만약 다 읽었다면 
 					break;//반복문 탈출 
 				}
 				//코드값에 해당되는 문자 얻어내기

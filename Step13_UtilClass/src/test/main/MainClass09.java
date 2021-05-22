@@ -44,17 +44,17 @@ public class MainClass09 {
 		
 		//참조 연습
 		List<Map<String, Object>> a=list;
-		Map<String, Object> b=list.get(0);
-		Object c=list.get(0).get("num");
-		Object d=list.get(0).get("name");
-		Object e=list.get(0).get("addr");
+		Map<String, Object> b=list.get(0); // 0번방 HashMap 참조값
+		Object c=list.get(0).get("num"); // 1
+		Object d=list.get(0).get("name"); // "김구라"
+		Object e=list.get(0).get("addr"); // "노량진"
 		
-		int f=(int)list.get(0).get("num");
+		int f=(int)list.get(0).get("num"); // 1
 		
-		String g=(String)list.get(0).get("name");
-		String h=(String)list.get(0).get("addr");
+		String g=(String)list.get(0).get("name"); // "김구라"
+		String h=(String)list.get(0).get("addr"); // "노량진"
 		
-		int i=((String)list.get(0).get("addr")).length();
+		int i=((String)list.get(0).get("addr")).length(); // 3
 	}
 }
 

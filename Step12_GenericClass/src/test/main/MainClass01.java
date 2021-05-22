@@ -23,6 +23,8 @@ public class MainClass01 {
 		Orange result2=box2.pull();
 		Banana result3=box3.pull();
 		
+		System.out.println(result1);
+		
 	}
 }
 
